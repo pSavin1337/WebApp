@@ -35,5 +35,9 @@
         android:id="@+id/webInfoFragment"
         android:name="com.lospollos.webapp.view.fragments.WebInfoFragment"
         android:label="fragment_web_info"
-        tools:layout="@layout/fragment_web_info" />
+        tools:layout="@layout/fragment_web_info" >
+        <argument
+            android:name="page_name"
+            app:argType="string" />
+    </fragment>
 </navigation>
