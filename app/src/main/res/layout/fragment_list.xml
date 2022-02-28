@@ -14,5 +14,6 @@
         android:id="@+id/list_web_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:visibility="invisible"
         tools:visibility="invisible" />
 </FrameLayout>
