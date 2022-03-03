@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_selectionFragment_to_webFragment"
             app:destination="@id/webFragment" />
+        <action
+            android:id="@+id/action_selectionFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment" />
     </fragment>
     <fragment
         android:id="@+id/listFragment"
@@ -40,4 +43,9 @@
             android:name="page_name"
             app:argType="string" />
     </fragment>
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.lospollos.webapp.view.fragments.CameraFragment"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera" />
 </navigation>

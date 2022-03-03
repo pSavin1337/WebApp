@@ -13,6 +13,7 @@ class SelectionFragment : Fragment() {
 
     lateinit var listButton: Button
     lateinit var webButton: Button
+    private lateinit var cameraButton: Button
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -26,6 +27,11 @@ class SelectionFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         listButton = view.findViewById(R.id.list_button)
         webButton = view.findViewById(R.id.web_button)
+        cameraButton = view.findViewById(R.id.camera_button)
+        cameraButton.setOnClickListener {
+            (activity as MainActivity)
+                .navController.navigate(R.id.action_selectionFragment_to_cameraFragment)
+        }
         listButton.setOnClickListener {
             (activity as MainActivity)
                 .navController.navigate(R.id.action_selectionFragment_to_listFragment)
